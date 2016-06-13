@@ -1,2 +1,2 @@
 #Matrix operations in Java
-matrix multiplication, vector dot product, transpose of a matrix
+Naïve implementation of matrix multiplication, vector dot product, transpose of a matrix and matrix-vector product

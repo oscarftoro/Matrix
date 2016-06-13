@@ -23,7 +23,7 @@ public class App
         Matrix.printer(transposed);
 
         double[] d = {1,3};
-        System.out.println("matrix-vector product");
+        System.out.println("matrix-vector product...");
         double[] pr = Matrix.mul(a,d);
         Matrix.printer(pr);
     }
