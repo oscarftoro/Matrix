@@ -30,7 +30,7 @@ class Matrix {
    return result;
  }
 
- //transpose
+ //transpose a matrix
  public static double[][] transpose(double[][] a) {
      int r = a.length;
      int c = a[0].length;
@@ -42,6 +42,7 @@ class Matrix {
        }
      return result;
  }
+
  public static void printer(double[][] a){
      for(double[] e : a)
          for (double d : e)
@@ -49,9 +50,7 @@ class Matrix {
  }
 
  //matrix-vector product
- // static double[] mult(double[][] a, double[] x)
+ //static double[] mult(double[][] a, double[] x)
 
- //vector-matrix product
- // static double[] mult(double[] y, double[][] a)
 
 }
