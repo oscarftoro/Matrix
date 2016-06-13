@@ -21,5 +21,10 @@ public class App
         double [][] transposed = Matrix.transpose(c);
         System.out.println("transposed matrix...");
         Matrix.printer(transposed);
+
+        double[] d = {1,3};
+        System.out.println("matrix-vector product");
+        double[] pr = Matrix.mul(a,d);
+        Matrix.printer(pr);
     }
 }

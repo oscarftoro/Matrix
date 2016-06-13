@@ -8,7 +8,7 @@ class Matrix {
 
     private double[][] columns;
 
-  //matrix matrix product
+  //matrix matrix product naïve implementation O(n^3)
   public static double[][]  mul(double a[][], double b[][]){
     int N = a.length;
     double[][] c = new double[N][N];
@@ -21,6 +21,17 @@ class Matrix {
     return c;
   }
 
+  //matrix-vector product
+  public static double[] mul(double[][] a, double[] x){
+     double[] result = new double[x.length];
+       if(a.length != x.length) {return new double[]{0};} else
+         for(int i=0; i< a.length; i++)
+           for(int j=0;j < x.length; j++)
+             result[i] += a[i][j] * x[j] ;
+
+       return result;
+
+    }
  //vector dot product
  static double dot(double[] x, double[] y){
    double result = 0; 
@@ -48,9 +59,13 @@ class Matrix {
          for (double d : e)
              System.out.println(d);
  }
+ public static void printer(double[] b){
+     for(double c : b) {
+         System.out.println(c);
+     }
+ }
 
- //matrix-vector product
- //static double[] mult(double[][] a, double[] x)
+
 
 
 }
